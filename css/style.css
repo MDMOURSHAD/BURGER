@@ -26,8 +26,7 @@ header{
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    background-position-x: center;
+    width: 100%;    
 }
 .nav{
     display: flex;
@@ -300,9 +299,13 @@ BURGER BOOK TABLE SECTION CSS HERE
 **********************************/
 
 .burger-book {
+    background: url(../img/book-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
-    padding: 40px 0px;
-}    
+    padding: 120px 0px;
+}
 .book-table{
     text-align:center;  
 }
@@ -367,4 +370,105 @@ form input::placeholder{
     text-transform: uppercase;
     padding: 13px 12px !important;
     cursor: pointer;
+}
+
+/**************************
+FOOOTER SECTION CSS HERE
+***************************/
+
+footer{
+    width:100%;
+    padding: 60px 0px;
+}
+.footer-content {
+    background: url(../img/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 25px 30px;
+    color:white;
+    display:flex;
+}
+.footer-content .left{
+    width: 50%;
+    padding:5px;
+}
+.footer-content .left img {
+    width: 250px;
+}
+.footer-content .left p {
+    letter-spacing: 0px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 35px 0px 130px 0px;
+} 
+
+.footer-content .left span {
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    color: #fff;
+}
+.footer-content .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.right .location {
+    text-align: center;
+    margin-top: auto;
+}
+.location .content {
+    display: flex;
+    width: 65%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.location .content:last-child{
+    margin-bottom: 0px;
+}
+.location .content span i {
+    vertical-align: middle;
+    font-size: 23px;
+}
+.location .content h6 {
+    letter-spacing: 2px;
+    font-size: 21px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+    margin-left: 16px;
+    color: #fff;
+    vertical-align: middle;
+}
+.right .icon {
+    text-align: right;
+    margin-top: auto;
+}
+.icon ul li{
+    margin-left:13px;
+    display: inline-block;
+}
+.icon ul li:first-child{
+    margin-left:0px;
+}
+.icon ul li a {
+    width: 30px;
+    background: #fff;
+    height: 30px;
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    color: black;
+    border-radius: 50%;
+    transition: .3s;
+}
+.icon ul li a:hover {
+    transform:scale(1.5);
+    color:black;
 }
